@@ -14,6 +14,8 @@ type deck []string
 // any variable of type deck it gets access now to the
 // print method
 // the variable d is an instance of the variable deck
+// d is basically the receiver argument
+
 func (d deck) print() {
 	for i, card := range d {
 		fmt.Println(i, card)
